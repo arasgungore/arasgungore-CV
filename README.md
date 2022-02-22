@@ -1,2 +1,2 @@
 # arasgungore-CV
-My CV.
+My CV I have written using LaTeX.
