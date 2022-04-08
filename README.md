@@ -1,4 +1,4 @@
-# arasgungore-cv
+# arasgungore-CV
 
 My curriculum vitae (CV) that I have written using a LaTeX template. In my CV, you may find my contact information, websites, education, experience, achievements, projects, and skills.
 
