@@ -1,6 +1,6 @@
 # arasgungore-CV
 
-My curriculum vitae (CV) that I have written using a LaTeX template. In my CV, you may find my contact information, websites, education, experience, achievements, projects, and skills.
+My curriculum vitae (CV) written using a LaTeX template. In my CV, you may find my contact information, websites, education, experience, achievements, projects, and skills.
 
 Please find attached my [CV](https://drive.google.com/file/d/1TGwMpZl6FDeQk1w_-EetbspCuzu16kCF/view?usp=sharing). 😜
 
