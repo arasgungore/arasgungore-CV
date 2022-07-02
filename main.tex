@@ -22,7 +22,7 @@
 \input{glyphtounicode}
 
 
-%----------FONT OPTIONS----------
+%---------- FONT OPTIONS ----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
 % \usepackage[sfdefault]{roboto}
@@ -63,11 +63,13 @@
 
 %-------------------------
 % Custom commands
+
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
   }
 }
+
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
@@ -77,6 +79,7 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -84,12 +87,24 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
+
 
 \newcommand{\resumeOrganizationHeading}[4]{
   \vspace{-2pt}\item
@@ -114,18 +129,18 @@
 
 \begin{document}
 
-%----------HEADING----------
+%---------- HEADING ----------
 
 \begin{center}
     \textbf{\Huge \scshape Aras Güngöre} \\ \vspace{3pt}
     \small
-    \faMobile \hspace{.5pt} \href{tel:905314204536}{+905314204536}
+    \faMobile \hspace{.5pt} \href{tel:905314204536}{+90 531 420 4536}
     $|$
     \faAt \hspace{.5pt} \href{mailto:arasgungore09@gmail.com}{arasgungore09@gmail.com}
     $|$
-    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/arasgungore}{arasgungore}
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/arasgungore}{LinkedIn}
     $|$
-    \faGithub \hspace{.5pt} \href{https://github.com/arasgungore}{arasgungore}
+    \faGithub \hspace{.5pt} \href{https://github.com/arasgungore}{GitHub}
     $|$
     \faGlobe \hspace{.5pt} \href{https://arasgungore.github.io}{Portfolio}
     $|$
@@ -134,48 +149,44 @@
 
 
 
-%-----------EDUCATION-----------
+%----------- EDUCATION -----------
 
 \section{Education}
   \vspace{3pt}
   \resumeSubHeadingListStart
     
-    \resumeSubheading
+    \resumeEducationHeading
       {Boğaziçi University
-      \normalfont{(Admission rate: 0.09\%)}
+      % \normalfont{(Admission rate: 0.09\%)}
       }{Istanbul, Turkey}
-      {Bachelor of Science in Electrical and Electronics Engineering;   \textbf{GPA: 3.73/4.00}}{Sep 2018 \textbf{--} Present}
+      {B.Sc. in Electrical and Electronics Engineering;   \textbf{GPA: 3.73/4.00}}{Sep 2018 \textbf{--} Jun 2023 (Expected)}
+      {Minor Degree in Computer Engineering;   \textbf{GPA: 3.86/4.00}}{Oct 2020 \textbf{--} Jun 2023 (Expected)}
         % \resumeItemListStart
-            % \resumeItem{\textbf{Activities and societies:} BUEC - Boğaziçi IEEE Student Branch, Nanonetworking Research Group (NRG)}
             % \resumeItem{\textbf{Relevant coursework:} Calculus I-II, Matrix Theory, Differential Equations, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability, Electronics, Signals and Systems, Electromagnetic Field Theory}
-            % \resumeItem{\textbf{Selectivity:} The university is frequently ranked as the top university in Turkey with an admission rate of 0.09\%.}
         % \resumeItemListEnd
-    
-    \resumeSubheading
-      {Boğaziçi University}{Istanbul, Turkey}
-      {Minor Degree in Computer Engineering;   \textbf{GPA: 3.86/4.00}}{Oct 2020 \textbf{--} Present}
-        \resumeItemListStart
-            \resumeItem{\textbf{Relevant coursework:} Discrete Computational Structures, Introduction to Object-Oriented Programming,\\ Data Structures and Algorithms}
-        \resumeItemListEnd
     
     \resumeSubheading
       {Kocaeli Science High School
-      \normalfont{(Admission rate: 0.85\%)}
+      % \normalfont{(Admission rate: 0.85\%)}
       }{Kocaeli, Turkey}
       {High School Diploma;   \textbf{GPA: 97.03/100}}{Sep 2014 \textbf{--} Jun 2018}
-        % \resumeItemListStart
-            % \resumeItem{\textbf{Selectivity:} The high school is frequently ranked as the top high school in Kocaeli with an admission rate of 0.85\%.}
-        % \resumeItemListEnd
     
   \resumeSubHeadingListEnd
 
 
 
-%-----------EXPERIENCE-----------
+%----------- RESEARCH EXPERIENCE -----------
 
-\section{Experience}
+\section{Research Experience}
   \vspace{3pt}
   \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Max Planck Institute for Intelligent Systems}{Stuttgart, Baden\textbf{-}Württemberg, Germany}
+      {Research Intern}{Jun 2022 \textbf{--} Aug 2022}
+        \resumeItemListStart
+            \resumeItem{Currently working with Sinan Özgün Demir on optimization of gait controllers for magnetic walking soft milirobots using ROS.}
+        \resumeItemListEnd
     
     \resumeSubheading
       {Nanonetworking Research Group, Boğaziçi University}{Istanbul, Turkey}
@@ -186,6 +197,16 @@
             \resumeItem{Plotted the arrival of molecules per symbol duration in a SISO MCvD system using Binomial, Poisson, and Gaussian model approximations with MATLAB.}
             \resumeItem{Ran Monte Carlo simulations of the Gaussian model to encode/decode randomized binary sequences in a SISO MCvD system using BCSK modulation technique and calculated the bit error rate (BER) on Z-channel.}
         \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+
+%----------- WORK EXPERIENCE -----------
+
+\section{Work Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
     
     \resumeSubheading
       {SESTEK Speech Enabled Software Technologies}{Istanbul, Turkey}
@@ -214,29 +235,35 @@
             \resumeItem{Assembled PCBs of both common and differential mode filters and used VNA Bode 100 to measure the cut-off frequencies.}
         \resumeItemListEnd
     
-    \resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
 
 
 
-%-----------ACHIEVEMENTS-----------
+%----------- AWARDS & ACHIEVEMENTS -----------
 
-\section{Achievements}
+\section{Awards \& Achievements}
   \vspace{3pt}
   \resumeSubHeadingListStart
     \small{\item{
         \textbf{National University Admission Exam (YKS):}{ Ranked $75^{th}$ in Mathematics and Science among ca. 2.3 million candidates with a test score of 489.92/500.} \\ \vspace{3pt}
+        
         \textbf{KYK Outstanding Success Scholarship:}{ Awarded to undergraduate students who have been ranked in the top 100 on National University Admission Exam by Higher Education Credit and Hostels Institution (KYK).} \\ \vspace{3pt}
+        
         \textbf{Boğaziçi University Success Scholarship:}{ Awarded to undergraduate students who have been ranked in the top 100 on National University Admission Exam by Boğaziçi University.} \\ \vspace{3pt}
+        
         \textbf{TÜBİTAK 2247-C Intern Researcher Scholarship:}{ Awarded to undergraduate students who take part in research projects carried out by the Scientific and Technological Research Council of Turkey (TÜBİTAK).} \\ \vspace{3pt}
+        
         \textbf{Duolingo English Test (DET):}{ Overall Score: 135/160} \\ \vspace{3pt}
+        
         % \textbf{Boğaziçi University English Proficiency Test (BUEPT):}{ Achieved the highest grade A on the BUEPT grading scheme with a total score in the range of 85-100.} \\ \vspace{3pt}
+        
         \textbf{Kocaeli Science High School Salutatorian Award:}{ Graduated as the second-highest ranked student in my class.}
     }}
- \resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
 
 
 
-%-----------PROJECTS-----------
+%----------- PROJECTS -----------
 
 \section{Projects}
     
@@ -281,15 +308,18 @@
 
 
 
-%-----------TECHNICAL SKILLS-----------
+%----------- SKILLS -----------
 
 \section{Skills}
   \vspace{1pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Programming:}{ C, C++, Java, Python, MATLAB, MySQL, R, VHDL} \\ \vspace{2pt}
-        \textbf{Technologies:}{ Git, Arduino, Simulink, LTspice, Xilinx ISE} \\ \vspace{2pt}
-        \textbf{Languages:}{ Turkish (Native), English (Professional), German (Limited), Russian (Elementary)}
+        \textbf{Programming:}{ C, C++, Java, Python, MATLAB, R, MySQL, VHDL} \\ \vspace{2pt}
+        
+        \textbf{Technologies:}{ Git, Arduino, ROS, Simulink, LTspice, Xilinx ISE} \\ \vspace{2pt}
+        
+        \textbf{Languages:}{ Turkish (Native), English (Professional), German (Elementary)}
+        
         % \textbf{Frameworks}{: X, X, X} \\
         % \textbf{Developer Tools}{: X, X, X} \\
         % \textbf{Libraries}{: X, X, X} \\
@@ -299,19 +329,19 @@
 
 
 
-%-----------CERTIFICATES-----------
+%----------- CERTIFICATES -----------
 
-\section{Certificates}
-  \resumeSubHeadingListStart
+% \section{Certificates}
+  % \resumeSubHeadingListStart
     
-    \resumeOrganizationHeading
-      {Procter \& Gamble VIA Certificate Program}{Feb 2022}{Business Skills, Data and Digital Skills, Project Management and Personal Productivity}
+    % \resumeOrganizationHeading
+      % {Procter \& Gamble VIA Certificate Program}{Feb 2022}{Business Skills, Data and Digital Skills, Project Management and Personal Productivity}
     
-  \resumeSubHeadingListEnd
+  % \resumeSubHeadingListEnd
 
 
 
-%-----------ORGANIZATIONS-----------
+%----------- ORGANIZATIONS -----------
 
 \section{Organizations}
   \resumeSubHeadingListStart
@@ -323,7 +353,7 @@
 
 
 
-%-----------HOBBIES-----------
+%----------- HOBBIES -----------
 
 % \section{Hobbies}
   % \resumeSubHeadingListStart
@@ -332,7 +362,7 @@
 
 
 
-%-----------REFERENCES-----------
+%----------- REFERENCES -----------
 
 % \section{References}
   % \resumeSubHeadingListStart
