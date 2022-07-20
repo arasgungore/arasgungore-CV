@@ -6,6 +6,14 @@ Please find attached my [CV](https://drive.google.com/file/d/1TGwMpZl6FDeQk1w_-E
 
 
 
+## Run on Terminal
+
+```sh
+pdflatex main.tex
+```
+
+
+
 ## Screenshots
 
 <p align="center">
